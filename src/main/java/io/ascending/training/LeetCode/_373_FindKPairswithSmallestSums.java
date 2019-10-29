@@ -79,8 +79,6 @@ public class _373_FindKPairswithSmallestSums{
 
     public static void main(String[] args) {
         _373_FindKPairswithSmallestSums tmp = new _373_FindKPairswithSmallestSums();
-        tmp.kSmallestPairs(new int[]{1, 7, 11}, new int[]{2, 4, 6}, 5);
-
-
+        System.out.println(tmp.kSmallestPairs(new int[]{1, 7, 11}, new int[]{2, 4, 6}, 5));
     }
 }
