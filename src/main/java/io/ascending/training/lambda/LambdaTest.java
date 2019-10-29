@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LambdaTest {
+
     interface MyString {
         String myStringFunction(String str);
     }
 
-    class MyStringImpl implements MyString{
+    class MyStringImpl implements MyString {
 
         @Override
         public String myStringFunction(String str) {
@@ -16,10 +17,14 @@ public class LambdaTest {
         }
     }
 
-
     public static void main(String[] args){
+
+/*
         MyString value = (str) -> "Good Morning " + str + "!";
         MyString value2 = (str) -> "Good Afternoon " + str + "!";;
+*/
+        MyString value = (str) -> "Good Morning " + str + "!";
+        MyString value2 = (str) -> "Good Afternoon " + str + "!";
 
         System.out.println(value.myStringFunction("Luis"));
         System.out.println(value2.myStringFunction("Ryo"));
@@ -34,7 +39,8 @@ public class LambdaTest {
         for(String item: items){
             System.out.println(item);
         }
-        items.forEach(abce->{
+
+        items.forEach(abce -> {
             System.out.println(abce);
         });
 

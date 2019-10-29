@@ -17,7 +17,6 @@ public class HashTest {
         Integer value = hm.get(dk);
 
         System.out.println(value);
-
     }
 
     private static Map<DataKey, Integer> getAllData() {

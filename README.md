@@ -1,4 +1,4 @@
-### Read me first before you do it at office !!!
+### Read me first!
 ##### compile class in the command line
     cd src/main/java
 	javac io/ascending/training/*.java

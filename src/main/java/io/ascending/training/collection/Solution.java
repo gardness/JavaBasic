@@ -2,6 +2,8 @@ package io.ascending.training.collection;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.stream.Stream;
 
 public class Solution {
 
@@ -45,18 +47,28 @@ public class Solution {
         empArr[3] = new Employee(1, "Pankaj", 32, 50000);
 
         //sorting employees array using Comparable interface implementation
-        Arrays.sort(empArr);
-        System.out.println("Default Sorting of Employees list:\n"+Arrays.toString(empArr));
+//        Arrays.sort(empArr);
+//        System.out.println("Default Sorting of Employees list:\n"+Arrays.toString(empArr));
 
-        Arrays.sort(empArr, SalaryComparator);
+        Arrays.sort(empArr, new SalaryComparator());
         System.out.println("Employees list sorted by Salary:\n"+Arrays.toString(empArr));
 
-        //sort employees array using Comparator by Age
-        Arrays.sort(empArr, AgeComparator);
-        System.out.println("Employees list sorted by Age:\n"+Arrays.toString(empArr));
+//
+//        String str = "apple, orange, apple, orange, banana, apple, banana";
+//        String[] strArr = str.split(", ");
+//        HashMap<String, Integer> map = new HashMap<>();
+//
+//        Stream.of(new String("apple, orange, apple, orange, banana, apple, banana").split(", "))
+//                .forEach(x -> map.put(x, map.getOrDefault(x, 0) + 1))
+//                .
 
-        //sort employees array using Comparator by Name
-        Arrays.sort(empArr, NameComparator);
-        System.out.println("Employees list sorted by Name:\n"+Arrays.toString(empArr));
+
+        //sort employees array using Comparator by Age
+//        Arrays.sort(empArr, AgeComparator);
+//        System.out.println("Employees list sorted by Age:\n"+Arrays.toString(empArr));
+//
+//        //sort employees array using Comparator by Name
+//        Arrays.sort(empArr, NameComparator);
+//        System.out.println("Employees list sorted by Name:\n"+Arrays.toString(empArr));
     }
 }
